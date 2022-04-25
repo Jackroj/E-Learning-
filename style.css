@@ -66,6 +66,11 @@ a:link {
 nav a:first-child {
     margin-top: 50%;    
 }
+.user_name{
+    text-align: right;
+    padding: 2em;
+
+}
 div#mainlink a:link, div#mainlink a:visited {
     padding: 0.7em;
     text-align: center;

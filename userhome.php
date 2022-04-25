@@ -1,6 +1,13 @@
 <?php
 include './student_header.php';
-?>
+session_start();
+if(isset($_SESSION['user'])) {
+  $name = $_SESSION['user'];
+    } 
+    ?>
+    <div class="user_name">
+        <h1>Welcome! <?php echo $name ?></h1>
+    </div>
 <article id="front_article">
     <h3>Units of Software Engineering</h3>
     <span>

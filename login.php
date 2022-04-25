@@ -37,8 +37,12 @@ if(!isset($_POST['submit'])) {
     $userid = $_POST['userid'];
     $pwd = $_POST['pwd'];
    $result = mysqli_query($link, "select * from userregn where userid='$userid' and pwd='$pwd'");
-       if(mysqli_num_rows($result)>0) {
-           $_SESSION['user']=$userid;
+   if(mysqli_num_rows($result)>0) {
+       
+       $name = mysqli_query($link, "select name from userregn where userid='$userid'");
+       $row = $name->fetch_assoc();
+       session_start();
+           $_SESSION['user']=$row['name'];
            header("Location:userhome.php");
        }
     if($userid=="admin" && $pwd=="admin") {

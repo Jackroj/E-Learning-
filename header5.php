@@ -17,11 +17,12 @@ session_start();
             </marquee>
         </header>
         <div id="mainlink">
-                <a href="index.php">Home</a>
-                <a href="index.php">About</a>
+                <!-- <a href="index.php">Home</a>
+                <a href="index.php">About</a> -->
                 <a href="userhome.php">Subject</a>
                 <a href="video.php">Videos</a>
                 <a href="quiz.php">Quiz</a>
+                <a href="signout.php">Logout</a>
         </div>
         <section>
             <nav>
