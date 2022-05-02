@@ -19,6 +19,7 @@ session_start();
         </header>
         <div id="mainlink">
                 <a href="userhome.php">Subject</a>
+                <a href="feedback.php">Feed Back</a>
                 <a href="video.php">Videos</a>
                 <a href="quiz.php">Quiz</a>
                 <a href="signout.php">Logout</a>

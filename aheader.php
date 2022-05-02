@@ -19,9 +19,9 @@ include './db.php';
         </header>
         <div id="mainlink">
                 <a href="adminhome.php">Quiz</a>
+                <a href="feedback_view.php">Feedback</a>
                 <a href="signout.php">Signout</a>
-                <!--a href="userhome.php">Subject</a>
-                <a href="index.php">Videos</a>
+                <!--<a href="index.php">Videos</a>
                 <a href="index.php">Images</a-->
         </div>
         <section>

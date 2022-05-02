@@ -1,6 +1,5 @@
 <?php
 include './student_header.php';
-session_start();
 if(isset($_SESSION['user'])) {
   $name = $_SESSION['user'];
     } 
