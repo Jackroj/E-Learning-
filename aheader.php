@@ -14,7 +14,7 @@ include './db.php';
             <h1>E-Tutorial</h1>
             <img src="Images/rlogo.jpg" id="rlogo">
             <marquee>
-                www.ECSE.com
+            PadmaPriya
             </marquee>
         </header>
         <div id="mainlink">

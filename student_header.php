@@ -14,7 +14,7 @@ session_start();
             <img src="Images/rlogo.jpg" id="rlogo">
             <br>
             <marquee>
-                www.ECSE.com
+            PadmaPriya
             </marquee>
         </header>
         <div id="mainlink">

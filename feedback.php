@@ -3,12 +3,17 @@ include './student_header.php';
 include './db.php';
 
 if (!isset($_POST['submit'])) {
+
+if(isset($_SESSION['user'])) {
+    $name = $_SESSION['user'];
+      } 
 ?>
+
 <div class="container">
     <div class="card">
         <form  method="POST">
             <label for="feedback">Share Your Experinence</label>
-            <input type="text" name="name" placeholder="Please enter your name" required>
+            <input type="text" name="name" value="<?php echo $name ?>" placeholder="Please enter your name" required>
             <textarea name="feedback"  cols="10" rows="10" placeholder="Let us know..." required></textarea>
             <button type="submit" name="submit">Send</button>
         </form> 
