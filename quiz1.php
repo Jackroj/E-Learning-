@@ -76,6 +76,9 @@ if(!isset($_POST['submit1'])) {
 	echo "<tr><th colspan='3'>Correctly Answered : $count";
 	echo "<tr><th colspan='3'>Percentage Obtained : $per%";
 	echo "</table>";
+	echo "<script>alert('Congradulation ! Your participation Certificate Issued successfully, click here below for Download') </script>";
+	echo "<br/>";
+	echo "<a href='./pdf/pdf_details.php'target='_blank' style='text-align: center'>Click Here!</a>";
 }
 ?>
 </article>
