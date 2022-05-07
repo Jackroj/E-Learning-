@@ -13,7 +13,7 @@ session_start();
             <h1>E-Tutorial in Software Engineering</h1>
             <img src="Images/rlogo.jpg" id="rlogo">
             <marquee>
-            PadmaPriya
+            PADMAPRIYA
             </marquee>
         </header>
         <div id="mainlink">

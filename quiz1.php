@@ -78,7 +78,7 @@ if(!isset($_POST['submit1'])) {
 	echo "</table>";
 	echo "<script>alert('Congradulation ! Your participation Certificate Issued successfully, click here below for Download') </script>";
 	echo "<br/>";
-	echo "<a href='./pdf/pdf_details.php'target='_blank' style='text-align: center'>Click Here!</a>";
+	echo "<a href='./pdf/pdf_details.php' target='_blank' style='text-align: center'>Click Here!</a>";
 }
 ?>
 </article>

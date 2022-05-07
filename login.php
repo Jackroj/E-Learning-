@@ -3,7 +3,7 @@ include './header.php';
 if(!isset($_POST['submit'])) {
 ?>
 <article id="front_article">
-    <h3>Administrator Login</h3>
+    <h3>Administrator And Student Login</h3>
 <form name="f" action="" method="post">
     <table id="login_tab">
         <thead>
