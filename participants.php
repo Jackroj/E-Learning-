@@ -1,7 +1,7 @@
 <?php
 include './aheader.php';
 include './db.php';
-$sql = "SELECT `id`, `count`, `percentage`, `name` FROM `participants`";
+$sql = "SELECT `id`, `count`, `percentage`, `name`,`time` FROM `participants`";
 $result = $link->query($sql);
 ?>
 <style>
@@ -22,6 +22,7 @@ color: #fff;
             <th class="td">Name</th>
             <th class="td">Count</th>
             <th class="td">Percentage</th>
+            <th class="td">Date and Time</th>
             <tbody>
                 <?php
                 if ($result->num_rows > 0) {
@@ -29,9 +30,10 @@ color: #fff;
                 ?>
                 <tr>
                 <td><?php echo $row["id"] ?></td>
-                <td><?php echo $row["name"] ?></td>
+                <td><?php echo ucfirst($row["name"]) ?></td>
                 <td><?php echo $row["count"] ?></td>
                 <td><?php echo $row["percentage"]."%" ?></td>
+                <td><?php echo $row["time"] ?></td>
                 </tr>
                 <?php }
                 }else{?>

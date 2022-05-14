@@ -13,7 +13,7 @@ if(isset($_SESSION['user'])) {
     <div class="card">
         <form  method="POST">
             <label for="feedback">Share Your Experinence</label>
-            <input type="text" name="name" value="<?php echo $name ?>" placeholder="Please enter your name" required>
+            <input type="text" name="name" value="<?php echo ucfirst($name) ?>" placeholder="Please enter your name" required>
             <textarea name="feedback"  cols="10" rows="10" placeholder="Let us know..." required></textarea>
             <button type="submit" name="submit">Send</button>
         </form> 
