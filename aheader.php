@@ -20,6 +20,7 @@ include './db.php';
         <div id="mainlink">
                 <a href="adminhome.php">Quiz</a>
                 <a href="feedback_view.php">Feedback</a>
+                <a href="participants.php">Participants</a>
                 <a href="signout.php">Signout</a>
                 <!--<a href="index.php">Videos</a>
                 <a href="index.php">Images</a-->

@@ -1,6 +1,10 @@
 <?php
 include './student_header.php';
 include './db.php';
+if(isset($_SESSION['user'])) {
+	$name = $_SESSION['user'];
+	  } 
+	  
 ?>
 <article id="front_article">
     <?php
@@ -10,7 +14,9 @@ include './db.php';
         
 if(!isset($_POST['submit1'])) {
     $unit = $_POST['unit'];
+
 ?>
+
   <form id="form" name="form" method="post" action="" onsubmit="">            
       <input type="hidden" name="unit" value="<?php echo $unit;?>">
                 <table id="report_tab" style="color:snow;">
@@ -73,12 +79,18 @@ if(!isset($_POST['submit1'])) {
 		}
 	}
 		$per = $count/$tot*100;
+		
+		
 	echo "<tr><th colspan='3'>Correctly Answered : $count";
 	echo "<tr><th colspan='3'>Percentage Obtained : $per%";
 	echo "</table>";
 	echo "<script>alert('Congradulation ! Your participation Certificate Issued successfully, click here below for Download') </script>";
 	echo "<br/>";
 	echo "<a href='./pdf/pdf_details.php' target='_blank' style='text-align: center'>Click Here!</a>";
+	if (isset($count)&&isset($per)) {
+		# code...
+		mysqli_query($link, "INSERT INTO `participants`(`count`, `percentage`, `name`) VALUES ('$count','$per','$name')") or die("<div class='msg'>".  mysqli_error($link)."</div>");
+	}
 }
 ?>
 </article>
