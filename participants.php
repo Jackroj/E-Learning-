@@ -16,11 +16,12 @@ color: #fff;
 }
 </style>
 <div class="container">
+    <h1> <center>No of participants atten the quiz competition</center> </h1>
     <div class="form">
         <table>
             <th class="td">SI/NO</th>
             <th class="td">Name</th>
-            <th class="td">Count</th>
+            <th class="td">Correct Answers</th>
             <th class="td">Percentage</th>
             <th class="td">Date and Time</th>
             <tbody>
